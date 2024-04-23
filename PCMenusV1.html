@@ -12,8 +12,7 @@
 </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minneapolis Antimicrobial CDSS</title>
-  <link rel="manifest" href="manifest.webmanifest">
+  <title>PC Menus</title>
   <link rel="icon" href="CDSSLogoApp.png" type="image/x-icon">
   <style>
     /* Common styles */
@@ -250,11 +249,6 @@
   <div id="footer">
   <p>Select to view other versions:</p>
     <div class="buttons-container">
-      <button id="desMoinesButton">Des Moines</button>
-      <button id="fargoButton">Fargo(testing)</button>
-      <button id="omahaButton">Omaha</button>
-      <button id="stCloudButton">St. Cloud</button>
-      <button id="siouxFallsButton">Sioux Falls</button>
     </div>
 
     <div class="picture-container">
@@ -267,21 +261,21 @@
   <script>
 // Fetch OMJSON Data
     async function fetchOMData() {
-      const response = await fetch('MinneapolisOMJSON.json');
+      const response = await fetch('DMOMJSON.json');
       const data = await response.json();
       return data;
     }
 
     // Fetch ODJSON Data
     async function fetchODData() {
-      const response = await fetch('MinneapolisODJSON.json');
+      const response = await fetch('DMODJSON.json');
       const data = await response.json();
       return data;
     }
 
     // Fetch ItemLink Data
     async function fetchItemLink() {
-      const response = await fetch('MinneapolisItemLinks.json');
+      const response = await fetch('ItemLinks.json');
       const data = await response.json();
       return data;
     }
@@ -318,7 +312,7 @@ function populateDropdown(omData) {
     }
 
     // If there are no terms for item and item.name starts with "ORZID2"
-    if (terms.length === 0 && item.Name.startsWith('ORZID2')) {
+    if (terms.length === 0 && item.Name.startsWith('DM ORZ')) {
       // Use displayText if not blank, else use item.name
       const displayText = item.DisplayText || item.Name;
 
@@ -686,7 +680,7 @@ function createOMTable(selectedData) {
           let currentIndex = 0;
 
           // Check if the row click item starts with 'ORZID' or 'ORZ GTX'
-          if (Item && (Item.startsWith('ORZID') || Item.startsWith('ORZ GTX'))) {
+          if (Item && (Item.startsWith('DM ORZ') || Item.startsWith('ORZ GTX'))) {
             cellContentElement.classList.add('clickable');
             cellContentElement.addEventListener('click', () => {
               handleRowClick(matchingItem);
@@ -901,7 +895,7 @@ function handleGoForward() {
       document.getElementById('searchInput').value = null;
       document.getElementById('searchInput').placeholder = "Search...";
       populateDropdown(omData);
-      dropdown.value = 'ORZID2 GMENU ABX INPT MAIN';
+      dropdown.value = 'DM ORZ GMENU DIABETES MANAGEMENT (UPDATE 7/2023)';
       filterData({ target: dropdown });
       scrollToTop()    
       adjustFontSize();
@@ -913,7 +907,7 @@ function handleGoForward() {
       document.getElementById('searchInput').value = null;
       document.getElementById('searchInput').placeholder = "Search...";
       populateDropdown(omData);
-      dropdown.value = 'ORZID2 GMENU ABX INDEX INPATIENT';
+      dropdown.value = 'DM ORZ GMENU DIABETES MANAGEMENT (UPDATE 7/2023)';
       filterData({ target: dropdown });
       scrollToTop();    
       adjustFontSize();
@@ -925,7 +919,7 @@ function handleGoForward() {
       document.getElementById('searchInput').value = null;
       document.getElementById('searchInput').placeholder = "Search...";
       populateDropdown(omData);
-      dropdown.value = 'ORZID2 GMENU ABX CNS';
+      dropdown.value = 'DM ORZ GMENU DIABETES MANAGEMENT (UPDATE 7/2023)';
       filterData({ target: dropdown });  
       scrollToTop();    
       adjustFontSize();
@@ -991,27 +985,6 @@ document.getElementById('searchInput').addEventListener('input', openDropdown);
 // Call the adjustFontSize function when the window is resized
 window.addEventListener('resize', adjustFontSize);
 
-// JavaScript code to handle button clicks
-document.getElementById('desMoinesButton').addEventListener('click', function () {
-openPageInNewWindow("DesMoinesCDSS.html", { " CI ": " ", " NE ": " ", "GMENU": "CI GMENU" });
-});
-
-document.getElementById('fargoButton').addEventListener('click', function () {
-  openPageInNewWindow("FargoCDSS.html",{ " CI ": " ", " NE ": " " }); // Pass the replacement value
-});
-
-document.getElementById('omahaButton').addEventListener('click', function () {
-  openPageInNewWindow('OmahaCDSS.html', { " CI ": " ", " NE ": " ", "GMENU": "NE GMENU" }); // Pass the replacement value
-});
-
-document.getElementById('stCloudButton').addEventListener('click', function () {
-  openPageInNewWindow('StCloudCDSS.html', { " CI ": " ", " NE ": " " }); // Pass the replacement value
-});
-
-document.getElementById('siouxFallsButton').addEventListener('click', function () {
-  openPageInNewWindow('SiouxFallsCDSS.html', { " CI ": " ", " NE ": " " }); // Pass the replacement value
-});
-
 // Function to open a page in a new window with multiple replacement values
 function openPageInNewWindow(pageURL, replacements) {
   const dropdown = document.getElementById('filterDropdown');
@@ -1048,7 +1021,7 @@ Promise.all([fetchOMData(), fetchODData(), fetchItemLink(), fetchAbxLink()]) // 
     dropdown.value = decodeURIComponent(dropdownValue);
   } else {
     // If no dropdown value is provided in the URL, set a default value
-    dropdown.value = 'ORZID2 GMENU ABX INPT MAIN';
+    dropdown.value = 'DM ORZ GMENU DIABETES MANAGEMENT (UPDATE 7/2023)';
   }
     pushHistory(dropdown.value);
     filterData({ target: dropdown });
@@ -1060,49 +1033,9 @@ Promise.all([fetchOMData(), fetchODData(), fetchItemLink(), fetchAbxLink()]) // 
   });
     
 window.onbeforeunload = function() {
-  return "This action will close the Antimicrobial CDSS app.";
+  return "This action will close the CDSS app.";
 };
             // Your existing PWA registration code
-
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('/service-worker.js', {
-            scope: '/'
-          });
-        }
-
-        // Add an event listener to trigger the installation prompt
-        let deferredInstallPrompt;
-
-        window.addEventListener('beforeinstallprompt', (event) => {
-            // Store the event to use it later when you want to show the install prompt.
-            deferredInstallPrompt = event;
-
-            // Show the install button
-            const installButton = document.getElementById('install-button');
-            installButton.style.display = 'block';
-        });
-
-        // Your existing click event listener for the install button
-        const installButton = document.getElementById('install-button');
-
-        installButton.addEventListener('click', () => {
-            if (deferredInstallPrompt) {
-                // Show the installation prompt to the user
-                deferredInstallPrompt.prompt();
-
-                // Wait for the user's choice
-                deferredInstallPrompt.userChoice.then((choiceResult) => {
-                    if (choiceResult.outcome === 'accepted') {
-                        console.log('User accepted the installation');
-                    } else {
-                        console.log('User dismissed the installation');
-                    }
-
-                    // Reset the deferred event
-                    deferredInstallPrompt = null;
-                });
-            }
-        });
   </script>
 </body>
 
