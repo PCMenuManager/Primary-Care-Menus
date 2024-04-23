@@ -1012,7 +1012,7 @@ function openPageInNewWindow(pageURL, replacements) {
 }
 
 // Fetch data and initialize the dropdown
-Promise.all([fetchOMData(), fetchODData(), fetchItemLink(), fetchAbxLink()]) // Add fetchIndex()
+Promise.all([fetchOMData()]) // Add fetchIndex()
   .then(([omjsonData, odjsonData, itemlinkjsonData, abxlinkjsonData]) => { 
     omData = omjsonData;
     odData = odjsonData;
