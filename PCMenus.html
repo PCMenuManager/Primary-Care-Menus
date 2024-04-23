@@ -228,7 +228,7 @@
   <div id="header">
 <div class="buttons-container">
   <button id="goBackButton">&#9664;</button>
-  <button id="mainMenuButton">Minneapolis Home</button>
+  <button id="mainMenuButton">PC Menus</button>
   <button id="indexButton">Index</button>
   <button id="goForwardButton">&#9654;</button>
   <button id="install-button" style="display: none";>Install/Update App</button>
@@ -249,11 +249,6 @@
   <div id="footer">
   <p>Select to view other versions:</p>
     <div class="buttons-container">
-      <button id="desMoinesButton">Des Moines</button>
-      <button id="fargoButton">Fargo(testing)</button>
-      <button id="omahaButton">Omaha</button>
-      <button id="stCloudButton">St. Cloud</button>
-      <button id="siouxFallsButton">Sioux Falls</button>
     </div>
 
     <div class="picture-container">
@@ -1027,7 +1022,7 @@ Promise.all([fetchOMData()]) // Add fetchIndex()
     dropdown.value = decodeURIComponent(dropdownValue);
   } else {
     // If no dropdown value is provided in the URL, set a default value
-    dropdown.value = 'ORZID2 GMENU ABX INPT MAIN';
+    dropdown.value = 'DM ORZ GMENU DIABETES MANAGEMENT (UPDATE 7/2023)';
   }
     pushHistory(dropdown.value);
     filterData({ target: dropdown });
