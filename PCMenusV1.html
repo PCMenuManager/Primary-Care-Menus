@@ -13,10 +13,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PC Menus</title>
-  <link rel="icon" href="CDSSLogoApp.png" type="image/x-icon">
   <style>
     /* Common styles */
-
     @font-face {
   font-family: 'PT Serif Bold';
   src: url('Fonts/PTSerif-Bold.eot');
@@ -157,41 +155,13 @@
     max-width: 300px; 
   }
     
-    
-#CDSSLogo {
-  width: 200px; /* Set the maximum width for the image */
-  height: auto;
-  float: Left; /* Float the image to the right */
-}
-  #VASeal {
-  width: 400px; /* Set the maximum width for the image */
-  height: auto;
-  float: Left; /* Float the image to the right */
-}
-
-
 #goBackButton,
 #mainMenuButton,
-#indexButton,
 #goForwardButton,
-#install-button {
-  font-family: 'PT Serif Regular', Arial, sans-serif;
-  background-color: transparent; /* Make the background transparent */
-  border: none; /* Remove the border */
-  border-radius: 10px; /* Adjust border-radius for rounded corners */
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Times New Roman", serif;
-  cursor: pointer;
-  color: white;
-  padding: 5px 5px; /* Adjust the values to your desired padding */
-}
 
 /* Add a darker shade of blue on hover */
 #goBackButton:hover,
 #mainMenuButton:hover,
-#indexButton:hover,
 #goForwardButton:hover,
 #install-button:hover {
   background-color: #4db8ff; /* lighter shade of blue */
@@ -250,11 +220,9 @@
     </div>
 
     <div class="picture-container">
-      <img src="CDSSLogo.png" alt="CDSS Logo" id="CDSSlogo">
-      <img src="VASeal.jpg" alt="VA Seal" id="VASeal">
     </div>
   </div>
-  <button id="downloadJSONButton">Download JSON (testing)</button>
+  <button id="downloadJSONButton">Download JSON</button>
   <p>V1.03</p>
   <script>
 // Fetch OMJSON Data
@@ -899,30 +867,6 @@ function handleGoForward() {
       adjustFontSize();
     }
 
-    // Function to handle the Index button click event
-    function handleIndex() {
-      const dropdown = document.getElementById('filterDropdown');
-      document.getElementById('searchInput').value = null;
-      document.getElementById('searchInput').placeholder = "Search...";
-      populateDropdown(omData);
-      dropdown.value = 'DM ORZ GMENU DIABETES MANAGEMENT (UPDATE 7/2023)';
-      filterData({ target: dropdown });
-      scrollToTop();    
-      adjustFontSize();
-    }
-
-    // Function to handle the Index button click event
-    function handleCNS() {
-      const dropdown = document.getElementById('filterDropdown');
-      document.getElementById('searchInput').value = null;
-      document.getElementById('searchInput').placeholder = "Search...";
-      populateDropdown(omData);
-      dropdown.value = 'DM ORZ GMENU DIABETES MANAGEMENT (UPDATE 7/2023)';
-      filterData({ target: dropdown });  
-      scrollToTop();    
-      adjustFontSize();
-    }
-
     // Function to handle the Download JSON button click event
     function handleDownloadJSON() {
       const displayText = selectedData.DisplayText || selectedData.Name;
@@ -956,8 +900,6 @@ document.getElementById('downloadJSONButton').addEventListener('click', handleDo
 document.getElementById('goBackButton').addEventListener('click', handleGoBack);
 document.getElementById('goForwardButton').addEventListener('click', handleGoForward);
 document.getElementById('mainMenuButton').addEventListener('click', handleMainMenu);
-/*document.getElementById('CNSButton').addEventListener('click', handleCNS);*/
-document.getElementById('indexButton').addEventListener('click', handleIndex);
 document.getElementById('filterDropdown').addEventListener('change', filterData);
 window.addEventListener('resize', adjustFontSize);
 window.addEventListener('DOMContentLoaded', adjustFontSize);
@@ -965,20 +907,6 @@ document.getElementById('searchInput').addEventListener('input', searchData);
 document.getElementById('searchInput').addEventListener('click', openDropdown);
 document.getElementById('searchInput').addEventListener('input', openDropdown);
 
-// JavaScript code to read the dropdown parameter from the URL and set the dropdown value
-/*window.addEventListener('DOMContentLoaded', function () {
-  const urlParams = new URLSearchParams(window.location.search);
-  const dropdown = document.getElementById('filterDropdown');
-  const dropdownValue = urlParams.get('dropdown');
-
-  if (dropdownValue) {
-    dropdown.value = decodeURIComponent(dropdownValue);
-  } else {
-    // If no dropdown value is provided in the URL, set a default value
-    dropdown.value = 'ORZID2 GMENU ABX INPT MAIN';
-  }
-  });
-*/
 
 // Call the adjustFontSize function when the window is resized
 window.addEventListener('resize', adjustFontSize);
