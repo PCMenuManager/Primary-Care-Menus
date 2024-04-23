@@ -174,19 +174,6 @@
 #mainMenuButton,
 #indexButton,
 #goForwardButton,
-#install-button {
-  font-family: 'PT Serif Regular', Arial, sans-serif;
-  background-color: transparent; /* Make the background transparent */
-  border: none; /* Remove the border */
-  border-radius: 10px; /* Adjust border-radius for rounded corners */
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Times New Roman", serif;
-  cursor: pointer;
-  color: white;
-  padding: 5px 5px; /* Adjust the values to your desired padding */
-}
 
 /* Add a darker shade of blue on hover */
 #goBackButton:hover,
@@ -291,7 +278,7 @@ function populateDropdown(omData) {
     }
 
     // If there are no terms for item and item.name starts with "ORZID2"
-    if (terms.length === 0 && item.Name.startsWith('ORZID2')) {
+    if (terms.length === 0 && item.Name.startsWith('DM ORZ')) {
       // Use displayText if not blank, else use item.name
       const displayText = item.DisplayText || item.Name;
 
@@ -887,7 +874,7 @@ function handleGoForward() {
       document.getElementById('searchInput').value = null;
       document.getElementById('searchInput').placeholder = "Search...";
       populateDropdown(omData);
-      dropdown.value = 'ORZID2 GMENU ABX INDEX INPATIENT';
+      dropdown.value = 'DM ORZ GMENU DIABETES MANAGEMENT (UPDATE 7/2023)';
       filterData({ target: dropdown });
       scrollToTop();    
       adjustFontSize();
@@ -899,7 +886,7 @@ function handleGoForward() {
       document.getElementById('searchInput').value = null;
       document.getElementById('searchInput').placeholder = "Search...";
       populateDropdown(omData);
-      dropdown.value = 'ORZID2 GMENU ABX CNS';
+      dropdown.value = 'DM ORZ GMENU DIABETES MANAGEMENT (UPDATE 7/2023)';
       filterData({ target: dropdown });  
       scrollToTop();    
       adjustFontSize();
