@@ -521,19 +521,19 @@ function adjustFontSize() {
     const columns = row.querySelectorAll('td');
     columns.forEach((column, index) => {
          if(screenWidth<400){
-      column.style.fontSize = '8px';
+      column.style.fontSize = '6px';
       }
         else if ((screenWidth>399)&&(screenWidth<800)){
-       column.style.fontSize = '10px';
+       column.style.fontSize = '7px';
        }
        else if ((screenWidth>799)&&(screenWidth<1200)){
-        column.style.fontSize = '12px';
+        column.style.fontSize = '8px';
        }
         else if ((screenWidth>1199)&&(screenWidth<1600)){
-        column.style.fontSize = '14px';
+        column.style.fontSize = '9px';
        }
         else if (screenWidth>1599){
-        column.style.fontSize = '16px';
+        column.style.fontSize = '10px';
        }      
     });
   });
