@@ -60,7 +60,7 @@
 {"Name":"Ertapenem","URL":"https://dva.sanfordguide.com/drug-information/antibacterial-agents/carbapenems/ertapenem","RouteFilter":null},
 {"Name":"Emtricitabine","URL":"https://dva.sanfordguide.com/drug-information/antiretroviral-agents/truvada","RouteFilter":null},
 {"Name":"Empagliflozin/Metformin","URL":"https://www.uptodate.com/contents/empagliflozin-and-metformin-drug-information?search=empagliflozin%2Fmetformin&source=panel_search_result&selectedTitle=1%7E3&usage_type=panel&kp_tab=drug_general&display_rank=1#F45017250","RouteFilter":null},
-{"Name":"Empagliflozin","URL":"https://www.uptodate.com/contents/empagliflozin-drug-information?source=auto_suggest&selectedTitle=1~4---1~4---empagli&search=empagliflozin#F26251410","RouteFilter":null},
+{"Name":"Empagliflozin ","URL":"https://www.uptodate.com/contents/empagliflozin-drug-information?source=auto_suggest&selectedTitle=1~4---1~4---empagli&search=empagliflozin#F26251410","RouteFilter":null},
 {"Name":"Doxycycline","URL":"https://dva.sanfordguide.com/drug-information/antibacterial-agents/tetra-cyclines/doxycycline","RouteFilter":null},
 {"Name":"Dolutegravir","URL":"https://dva.sanfordguide.com/drug-information/antiretroviral-agents/dolutegravir","RouteFilter":null},
 {"Name":"Dicloxacillin","URL":"https://dva.sanfordguide.com/drug-information/antibacterial-agents/penicillins/antistaphylo-coccal-penicillins/dicloxacin","RouteFilter":null},
