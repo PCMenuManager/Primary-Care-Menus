@@ -877,20 +877,19 @@ function handleGoForward() {
       adjustFontSize();
     }
 
-    // Function to handle the Download JSON button click event
-    function handleDownloadJSON() {
-      const displayText = selectedData.DisplayText || selectedData.Name;
-      const data = JSON.stringify(selectedData, null, 2);
-      const filename = `${displayText}.json`;
+  // Function to handle the Download JSON button click event
+function handleDownloadJSON() {
+  const displayText = selectedData.DisplayText || selectedData.Name;
+  const filename = `${displayText}.json`;
 
-      const element = document.createElement('a');
-      element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(data));
-      element.setAttribute('download', filename);
-      element.style.display = 'none';
-      document.body.appendChild(element);
-      element.click();
-      document.body.removeChild(element);
-    }
+  // Create a new Blob with the JSON data and correct indentation
+  const data = new Blob([JSON.stringify(selectedData, null, 2)], {type: 'application/json'});
+
+  const element = document.createElement('a');
+  element.href = URL.createObjectURL(data);
+  element.download = filename;
+  element.click();
+}
 
     // Function to open the dropdown when clicking into the search input
     function openDropdown() {
