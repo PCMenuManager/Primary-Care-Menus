@@ -36,7 +36,7 @@
 {"Name":"Micafungin","URL":"https://dva.sanfordguide.com/drug-information/antifungal-agents/echinocandins/micafungin","RouteFilter":null},
 {"Name":"Metronidazole topical","URL":"http://www.uptodate.com/contents/search.do?unid=minmasoub&srcsys=UTD187508&eiv=2.1.0","RouteFilter":"Topical"},
 {"Name":"Metronidazole","URL":"https://dva.sanfordguide.com/drug-information/antibacterial-agents/nitroimidazoles/metronidazole#autotoc-item-autotoc-1","RouteFilter":null},
-{"Name":"Metformin","URL":"https://www.uptodate.com/contents/metformin-drug-information?source=auto_suggest&selectedTitle=1~4---1~4---metformin&search=metformin#F193863","RouteFilter":null},
+{"Name":"Metformin ","URL":"https://www.uptodate.com/contents/metformin-drug-information?source=auto_suggest&selectedTitle=1~4---1~4---metformin&search=metformin#F193863","RouteFilter":null},
 {"Name":"Meropenem","URL":"https://dva.sanfordguide.com/drug-information/antibacterial-agents/carbapenems/meropenem","RouteFilter":null},
 {"Name":"Lisinopril","URL":"https://www.uptodate.com/contents/lisinopril-drug-information?search=Lisinopril&source=panel_search_result&selectedTitle=1%7E84&usage_type=panel&kp_tab=drug_general&display_rank=1#F189196","RouteFilter":null},
 {"Name":"Linezolid","URL":"https://dva.sanfordguide.com/drug-information/antibacterial-agents/oxazolidinones/linezolid-zyvox","RouteFilter":null},
