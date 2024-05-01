@@ -893,13 +893,6 @@ function handleDownloadJSON() {
   document.body.removeChild(element);
 }
 
-
-  // Revoke the object URL after the download is completed
-  setTimeout(() => {
-    URL.revokeObjectURL(element.href);
-  }, 100);
-}
-
     // Function to open the dropdown when clicking into the search input
     function openDropdown() {
       const dropdown = document.getElementById('filterDropdown');
