@@ -878,19 +878,20 @@ function handleGoForward() {
     }
 
 // Function to handle the Download JSON button click event
-    function handleDownloadJSON() {
-      const displayText = selectedData.DisplayText || selectedData.Name;
-      const data = JSON.stringify(selectedData, null, 2);
-      const filename = `${displayText}.json`;
+function handleDownloadJSON() {
+  const displayText = selectedData.DisplayText || selectedData.Name;
+  const filename = `${displayText}.json`;
+  const data = JSON.stringify(selectedData, null, 2); // Indent with 2 spaces
+  const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(data);
 
-      const element = document.createElement('a');
-      element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(data));
-      element.setAttribute('download', filename);
-      element.style.display = 'none';
-      document.body.appendChild(element);
-      element.click();
-      document.body.removeChild(element);
-    }
+  const element = document.createElement('a');
+  element.setAttribute('href', dataUri);
+  element.setAttribute('download', filename);
+  element.style.display = 'none';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+}
 
 
   // Revoke the object URL after the download is completed
