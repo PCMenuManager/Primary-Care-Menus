@@ -881,14 +881,17 @@ function handleGoForward() {
 function handleDownloadJSON() {
   const displayText = selectedData.DisplayText || selectedData.Name;
   const filename = `${displayText}.json`;
-
-  // Create a new Blob with the JSON data and correct indentation
-  const data = new Blob([JSON.stringify(selectedData, null, 2)], { type: 'application/json' });
+  const data = JSON.stringify(selectedData, null, 2); // Indent with 2 spaces
+  const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(data);
 
   const element = document.createElement('a');
-  element.href = URL.createObjectURL(data);
-  element.download = filename;
+  element.setAttribute('href', dataUri);
+  element.setAttribute('download', filename);
+  element.style.display = 'none';
+  document.body.appendChild(element);
   element.click();
+  document.body.removeChild(element);
+}
 
   // Revoke the object URL after the download is completed
   setTimeout(() => {
