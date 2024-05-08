@@ -499,22 +499,22 @@ function adjustFontSize() {
    table.style.width = '1000px'
    }
   else if (screenWidth<400){
-     table.style.width = '1100px'
+     table.style.width = '1000px'
    }
   else if ((screenWidth>399)&&(screenWidth<800)&&(maxColumns===1)){
     table.style.width = '1200px'
   }
   else if ((screenWidth>399)&&(screenWidth<800)){
-    table.style.width = '1300px'
+    table.style.width = '1200px'
   }
   else if ((screenWidth>799)&&(screenWidth<1200)){
-    table.style.width = '1400px'
+    table.style.width = '1200px'
     }
   else if ((screenWidth>1199)&&(screenWidth<1600)){
-    table.style.width = '1500px'
+    table.style.width = '1300px'
     }
   else if (screenWidth>1599){
-    table.style.width = '1700px'
+    table.style.width = '1500px'
     }
     
   tableRows.forEach(row => {
@@ -524,16 +524,16 @@ function adjustFontSize() {
       column.style.fontSize = '8px';
       }
         else if ((screenWidth>399)&&(screenWidth<800)){
-       column.style.fontSize = '9px';
+       column.style.fontSize = '10px';
        }
        else if ((screenWidth>799)&&(screenWidth<1200)){
-        column.style.fontSize = '9px';
+        column.style.fontSize = '12px';
        }
         else if ((screenWidth>1199)&&(screenWidth<1600)){
-        column.style.fontSize = '10px';
+        column.style.fontSize = '14px';
        }
         else if (screenWidth>1599){
-        column.style.fontSize = '12px';
+        column.style.fontSize = '16px';
        }      
     });
   });
@@ -877,32 +877,20 @@ function handleGoForward() {
       adjustFontSize();
     }
 
-// Function to handle the Download JSON button click event
-function handleDownloadJSON() {
-  const displayText = selectedData.DisplayText || selectedData.Name;
-  const filename = `${displayText}.json`;
+    // Function to handle the Download JSON button click event
+    function handleDownloadJSON() {
+      const displayText = selectedData.DisplayText || selectedData.Name;
+      const data = JSON.stringify(selectedData, null, 2);
+      const filename = `${displayText}.json`;
 
-  // Convert the JSON object to a string with placeholders for consecutive spaces
-  const jsonString = JSON.stringify(selectedData, (key, value) => {
-    if (typeof value === 'string') {
-      return value.replace(/\s{2,}/g, (match) => match.replace(/ /g, '¤'));
+      const element = document.createElement('a');
+      element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(data));
+      element.setAttribute('download', filename);
+      element.style.display = 'none';
+      document.body.appendChild(element);
+      element.click();
+      document.body.removeChild(element);
     }
-    return value;
-  });
-
-  // Replace the placeholders with the original consecutive spaces
-  const data = jsonString.replace(/¤/g, ' ');
-
-  const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(data);
-
-  const element = document.createElement('a');
-  element.setAttribute('href', dataUri);
-  element.setAttribute('download', filename);
-  element.style.display = 'none';
-  document.body.appendChild(element);
-  element.click();
-  document.body.removeChild(element);
-}
 
     // Function to open the dropdown when clicking into the search input
     function openDropdown() {
