@@ -12,7 +12,7 @@
 </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anatomic X-ray</title>
+  <title>Diabetes Management</title>
   <style>
     /* Common styles */
     @font-face {
@@ -209,7 +209,7 @@
   <div id="header">
 <div class="buttons-container">
   <button id="goBackButton">&#9664;</button>
-  <button id="mainMenuButton">Anatomic X-ray</button>
+  <button id="mainMenuButton">Diabetes Management</button>
   <button id="goForwardButton">&#9654;</button>
 </div>
 
