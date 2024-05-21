@@ -237,14 +237,14 @@
   <script>
 // Fetch OMJSON Data
     async function fetchOMData() {
-      const response = await fetch('AXROMJSON.json');
+      const response = await fetch('OMJSON.json');
       const data = await response.json();
       return data;
     }
 
     // Fetch ODJSON Data
     async function fetchODData() {
-      const response = await fetch(AXRODJSON.json');
+      const response = await fetch(ODJSON.json');
       const data = await response.json();
       return data;
     }
@@ -288,7 +288,7 @@ function populateDropdown(omData) {
     }
 
     // If there are no terms for item and item.name starts with "ORZID2"
-    if (terms.length === 0 && item.Name.startsWith('AXR ORZ')) {
+    if (terms.length === 0 && item.Name.startsWith(' ORZ')) {
       // Use displayText if not blank, else use item.name
       const displayText = item.DisplayText || item.Name;
 
