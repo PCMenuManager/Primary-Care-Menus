@@ -12,7 +12,7 @@
 </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anatomic X-ray</title>
+  <title>Anatomic X-Ray Menu</title>
   <style>
     /* Common styles */
     @font-face {
@@ -209,7 +209,7 @@
   <div id="header">
 <div class="buttons-container">
   <button id="goBackButton">&#9664;</button>
-  <button id="mainMenuButton">Anatomic X-ray</button>
+  <button id="mainMenuButton">Anatomic X-Ray Menu</button>
   <button id="goForwardButton">&#9654;</button>
 </div>
 
@@ -244,7 +244,7 @@
 
     // Fetch ODJSON Data
     async function fetchODData() {
-      const response = await fetch('AXRODJSON.json');
+      const response = await fetch(AXRODJSON.json');
       const data = await response.json();
       return data;
     }
