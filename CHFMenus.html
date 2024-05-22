@@ -499,41 +499,41 @@ function adjustFontSize() {
    table.style.width = '900px'
    }
   else if (screenWidth<400){
-     table.style.width = '800px'
+     table.style.width = '500px'
    }
   else if ((screenWidth>399)&&(screenWidth<800)&&(maxColumns===1)){
-    table.style.width = '1200px'
+    table.style.width = '1000px'
   }
   else if ((screenWidth>399)&&(screenWidth<800)){
-    table.style.width = '800px'
+    table.style.width = '1200px'
   }
   else if ((screenWidth>799)&&(screenWidth<1200)){
-    table.style.width = '1200px'
-    }
-  else if ((screenWidth>1199)&&(screenWidth<1600)){
     table.style.width = '1400px'
     }
-  else if (screenWidth>1599){
+  else if ((screenWidth>1199)&&(screenWidth<1600)){
     table.style.width = '1600px'
+    }
+  else if (screenWidth>1599){
+    table.style.width = '1800px'
     }
 
   tableRows.forEach(row => {
     const columns = row.querySelectorAll('td');
     columns.forEach((column, index) => {
          if(screenWidth<400){
-      column.style.fontSize = '9px';
+      column.style.fontSize = '8px';
       }
         else if ((screenWidth>399)&&(screenWidth<800)){
-       column.style.fontSize = '10px';
+       column.style.fontSize = '9px';
        }
        else if ((screenWidth>799)&&(screenWidth<1200)){
-        column.style.fontSize = '11px';
+        column.style.fontSize = '9px';
        }
         else if ((screenWidth>1199)&&(screenWidth<1600)){
-        column.style.fontSize = '13px';
+        column.style.fontSize = '10px';
        }
         else if (screenWidth>1599){
-        column.style.fontSize = '16px';
+        column.style.fontSize = '12px';
        }      
     });
   });
