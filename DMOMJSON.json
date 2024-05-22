@@ -22,7 +22,7 @@
 {"Row" : 13, "Column" : 3, "Text" : "     A1c dec.  (-0.6 to -0.8))"}, 
 {"Row" : 14, "Column" : 3, "Text" : "Do NOT Combine with GLP-1 agents"}, 
 {"Row" : 17, "Column" : 3, "Item" : "DM PSOZ ALOGLIPTIN __MG DAILY (DM MENU)", "DisplayText" : "ALOGLIPTIN __MG DAILY", "Text" : "Alogliptin"},
-{"Row" : 11, "Column" : 2, "Text" : " SGLT-2 (Sodium Glucose Co-Transporter 2)", "Header" : 1}, 
+{"Row" : 11, "Column" : 2, "Text" : "         SGLT-2 (Sodium Glucose Co-Transporter 2)", "Header" : 1}, 
 {"Row" : 12, "Column" : 2, "Text" : "Empagliflozin, Canagliflozin, Dapagliflozin (Weight (-), A1c dec (-0.5 to -1.0))"}, 
 {"Row" : 13, "Column" : 2, "Text" : "Contraindicated: Dialysis, pregnant/nursing, DM-1, high risk for ketoacidosis,"}, 
 {"Row" : 14, "Column" : 2, "Text" : "    Hx of (pancreatic surgery, pancreatitis, or alcohol abuse)"}, 
