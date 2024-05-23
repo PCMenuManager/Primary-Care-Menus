@@ -41,13 +41,13 @@
 {"Row" : 23, "Column" : 1, "Item" : "CHF PSZ GMENU HEART FAILURE MILDLY-REDUCED EF v2", "DisplayText" : "Heart Failure Management Recommendations for Mildly-reduced EF", "Text" : "Mildly-reduced EF (LVEF 41-49%)..."},
 {"Row" : 21, "Column" : 1, "Item" : "CHF PSZ GMENU HEART FAILURE REDUCED EF V2", "DisplayText" : "Reduced EF (LVEF <= 40%) or HF with Improved EF..."},
 {"Row" : 27, "Column" : 1, "Text" : "LABS (baseline and after initiation/change):", "Header" : 1}, 
-{"Row" : 30, "Column" : 1, "Item" : "CHF LRTZ CHEM8(SP) TODAY", "DisplayText" : "Chem 7 (today)", "Text" : "  Chem 7 (today)"},
-{"Row" : 31, "Column" : 1, "Item" : "CHF LRTZ CHEM8(SP) 7 DAYS", "DisplayText" : "Chem 7 (7 days)", "Text" : "  Chem 7 (7 days)"},
+{"Row" : 30, "Column" : 1, "Item" : "CHF LRTZ CHEM8(SP) TODAY", "DisplayText" : " Chem 7 (today)", "Text" : "   Chem 7 (today)"},
+{"Row" : 31, "Column" : 1, "Item" : "CHF LRTZ CHEM8(SP) 7 DAYS", "DisplayText" : " Chem 7 (7 days)", "Text" : "   Chem 7 (7 days)"},
 {"Row" : 33, "Column" : 1, "Text" : "-Loop diuretics or Mineralocorticoids Receptor Antagonists:"}, 
-{"Row" : 34, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF TODAY", "DisplayText" : "Chem 7 + MAG Today", "Text" : "  Chem 7 + Magnesium (today)"},
-{"Row" : 35, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF 7 DAYS", "DisplayText" : "Chem 7 + Mag 7 Days", "Text" : "  Chem 7 + Magnesium (7 days)"},
-{"Row" : 38, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF 28 DAYS", "DisplayText" : "Chem 7 + Mag 28 Days", "Text" : "Chem 7 + Magnesium (28 days)"},
-{"Row" : 39, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF 6 MONTHS", "DisplayText" : "Chem 7 + Mag 6 months", "Text" : "  Chem 7 + Magnesium (6 months)"}
+{"Row" : 34, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF TODAY", "DisplayText" : " Chem 7 + MAG Today", "Text" : "   Chem 7 + Magnesium (today)"},
+{"Row" : 35, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF 7 DAYS", "DisplayText" : " Chem 7 + Mag 7 Days", "Text" : "   Chem 7 + Magnesium (7 days)"},
+{"Row" : 38, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF 28 DAYS", "DisplayText" : " Chem 7 + Mag 28 Days", "Text" : " Chem 7 + Magnesium (28 days)"},
+{"Row" : 39, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF 6 MONTHS", "DisplayText" : " Chem 7 + Mag 6 months", "Text" : "   Chem 7 + Magnesium (6 months)"}
 ]},
 {"Name" : "CHF PSZ GMENU HEART FAILURE MILDLY-REDUCED EF v2", "Term" : "created 4/18/23 per LEAF request #330, submitted by Crook, to improve medication management of Heart Failure and to align prescribing with VA/DoD guidelines  MTB-CAC", "DisplayText" : "Heart Failure Management Recommendations for Mildly-reduced EF  ", "Version" : "CHF", "Contents" : [
 {"Row" : 1, "Column" : 1, "Text" : "Recommendations for Mildly-reduced EF (LVEF 41-49%)", "Header" : 1}, 
@@ -323,12 +323,12 @@
 {"Row" : 23, "Column" : 1, "Item" : "CHF PSZ GMENU HEART FAILURE MILDLY-REDUCED EF v2", "DisplayText" : "Heart Failure Management Recommendations for Mildly-reduced EF", "Text" : "Mildly-reduced EF (LVEF 41-49%)..."},
 {"Row" : 21, "Column" : 1, "Item" : "CHF PSZ GMENU HEART FAILURE REDUCED EF V2", "DisplayText" : "Reduced EF (LVEF <= 40%) or HF with Improved EF..."},
 {"Row" : 27, "Column" : 1, "Text" : "LABS (baseline and after initiation/change):", "Header" : 1}, 
-{"Row" : 30, "Column" : 1, "Item" : "CHF LRTZ CHEM8(SP) TODAY", "DisplayText" : "Chem 7 (today)", "Text" : " Chem 7 (today)"},
-{"Row" : 31, "Column" : 1, "Item" : "CHF LRTZ CHEM8(SP) 7 DAYS", "DisplayText" : "Chem 7 (7 days)", "Text" : " Chem 7 (7 days)"},
+{"Row" : 30, "Column" : 1, "Item" : "CHF LRTZ CHEM8(SP) TODAY", "DisplayText" : " Chem 7 (today)", "Text" : "  Chem 7 (today)"},
+{"Row" : 31, "Column" : 1, "Item" : "CHF LRTZ CHEM8(SP) 7 DAYS", "DisplayText" : " Chem 7 (7 days)", "Text" : "  Chem 7 (7 days)"},
 {"Row" : 33, "Column" : 1, "Text" : "-Loop diuretics or Mineralocorticoids Receptor Antagonists:"}, 
-{"Row" : 34, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF TODAY", "DisplayText" : "Chem 7 + MAG Today", "Text" : " Chem 7 + Magnesium (today)"},
-{"Row" : 35, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF 7 DAYS", "DisplayText" : "Chem 7 + Mag 7 Days", "Text" : " Chem 7 + Magnesium (7 days)"},
-{"Row" : 38, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF 28 DAYS", "DisplayText" : "Chem 7 + Mag 28 Days", "Text" : "Chem 7 + Magnesium (28 days)"},
-{"Row" : 39, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF 6 MONTHS", "DisplayText" : "Chem 7 + Mag 6 months", "Text" : " Chem 7 + Magnesium (6 months)"}
+{"Row" : 34, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF TODAY", "DisplayText" : " Chem 7 + MAG Today", "Text" : "  Chem 7 + Magnesium (today)"},
+{"Row" : 35, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF 7 DAYS", "DisplayText" : " Chem 7 + Mag 7 Days", "Text" : "  Chem 7 + Magnesium (7 days)"},
+{"Row" : 38, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF 28 DAYS", "DisplayText" : " Chem 7 + Mag 28 Days", "Text" : " Chem 7 + Magnesium (28 days)"},
+{"Row" : 39, "Column" : 1, "Item" : "CHF ORZ SET CHEM 7 + MAG CHF 6 MONTHS", "DisplayText" : " Chem 7 + Mag 6 months", "Text" : "  Chem 7 + Magnesium (6 months)"}
 ]}
 ]
