@@ -46,7 +46,7 @@
 {"Row" : 56, "Column" : 3, "Item" : "DM ORZ GMENU INSULIN TREATMENT MENU", "DisplayText" : "Insulin Treatment Menu", "Text" : "Insulin Treatment Menu...  (Click Here)"},
 {"Row" : 25, "Column" : 2, "Item" : "DM PSOZ EMPAGLIFLOZIN/METFORMIN IR COMBO BID (DM MENU)", "DisplayText" : "EMPAGLIFLOZIN/METFORMIN COMBO BID", "Text" : "   Empagliflozin/Metformin IR (Immediate Release) BID"},
 {"Row" : 26, "Column" : 2, "Item" : "DM PSOZ EMPAGLIFLOZIN/METFORMIN SA COMBO DAILY (DM MENU)", "DisplayText" : "EMPAGLIFLOZIN/METFORMIN SA COMBO DAILY", "Text" : "   Empagliflozin/Metformin SA (Long Acting) Daily"},
-
+{"Row" : 23, "Column" : 2, "Text" : "            (PREFERRED if in combination with metformin)"},
 {"Row" : 30, "Column" : 1, "Text" : "Hypoglycemic Treatment Agents", "Header" : 1}, 
 {"Row" : 31, "Column" : 1, "Item" : "DM PSOZ GLUCOSE TABLETS (DM MENU)", "DisplayText" : "GLUCOSE TABLETS", "Text" : "Glucose Tablets"},
 {"Row" : 32, "Column" : 1, "Item" : "DM PSOZ GLUCOSE GEL (DM MENU)", "DisplayText" : "GLUCOSE GEL", "Text" : "Glucose Gel"},
@@ -211,7 +211,7 @@
 {"Row" : 56, "Column" : 3, "Item" : "DM ORZ GMENU INSULIN TREATMENT MENU", "DisplayText" : "Insulin Treatment Menu", "Text" : "Insulin Treatment Menu...  (Click Here)"},
 {"Row" : 25, "Column" : 2, "Item" : "DM PSOZ EMPAGLIFLOZIN/METFORMIN IR COMBO BID (DM MENU)", "DisplayText" : "EMPAGLIFLOZIN/METFORMIN COMBO BID", "Text" : "   Empagliflozin/Metformin IR (Immediate Release) BID"},
 {"Row" : 26, "Column" : 2, "Item" : "DM PSOZ EMPAGLIFLOZIN/METFORMIN SA COMBO DAILY (DM MENU)", "DisplayText" : "EMPAGLIFLOZIN/METFORMIN SA COMBO DAILY", "Text" : "   Empagliflozin/Metformin SA (Long Acting) Daily"},
-{"Row" : 23, "Column" : 2, "Text" : "           (PREFERRED if in combination with metformin)"}, 
+
 {"Row" : 30, "Column" : 1, "Text" : "Hypoglycemic Treatment Agents", "Header" : 1}, 
 {"Row" : 31, "Column" : 1, "Item" : "DM PSOZ GLUCOSE TABLETS (DM MENU)", "DisplayText" : "GLUCOSE TABLETS", "Text" : "Glucose Tablets"},
 {"Row" : 32, "Column" : 1, "Item" : "DM PSOZ GLUCOSE GEL (DM MENU)", "DisplayText" : "GLUCOSE GEL", "Text" : "Glucose Gel"},
