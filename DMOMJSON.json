@@ -139,8 +139,8 @@
 {"Row" : 18, "Column" : 1, "Text" : "      Glargine was Clinically ineffective in controlling blood glucose."}, 
 {"Row" : 29, "Column" : 1, "Item" : "DM ORZ SET TOUJEO MAX PEN WITH PEN NEEDLE", "Text" : "         Insulin, Glargine 300unit/ml (Toujeo Max) 3mL pen"},
 {"Row" : 29, "Column" : 2, "Item" : "DM ORZ SET TRESIBA PEN 100UNIT/ML WITH PEN NEEDLE", "DisplayText" : "         Insulin, Degludec 100 unit/ml (Tresiba)"},
-{"Row" : 11, "Column" : 1, "Text" : "Insulin, Detemir (Convert to Glargine - Removal from market 1/2024)"}, 
-{"Row" : 20, "Column" : 1, "Text" : "Insulin, Detemir (Convert to Glargine - Removal from market 1/2024)"}
+{"Row" : 11, "Column" : 1, "Text" : "         Insulin, Detemir (Convert to Glargine - Removal from market 1/2024)"}, 
+{"Row" : 20, "Column" : 1, "Text" : "         Insulin, Detemir (Convert to Glargine - Removal from market 1/2024)"}
 ]},
 {"Name" : "DM ORZ GMENU MOVE CONSULTS", "DisplayText" : "Weight Management Consults Menu", "Version" : "DM", "Contents" : [
 {"Row" : 1, "Column" : 1, "Text" : "MOVE PROGRAM CONSULTS:", "Header" : 1}, 
