@@ -10,23 +10,23 @@
   gtag('config', 'G-RZT6D0E0DS');
   </script>
   <script>
-  var Version = 'V1.05'
-  var CDSSlocation = 'Minneapolis'
-  var Title = 'Minneapolis Antimicrobial CDSS'
-  var MainMenuButton = 'Minneapolis Home'
-  const MainMenu = 'ORZID2 GMENU ABX INPT MAIN';
-  var IndexButton = 'Index'
-  const Index = 'ORZID2 GMENU ABX INDEX INPATIENT';
-  const OMjson = 'MinneapolisOMJSON.json';
-  const ODjson = 'MinneapolisODJSON.json';
-  const txmlFile = 'Minneapolis.txml';
-  const ItemLinkjson = 'MinneapolisItemLinks.json';
-  const AbxLinkjson = 'AbxLinks.json';
-  const MenuPrefix = 'ORZID2';
-  const LinkPrefix = 'ORZ GTX';
-  var hideButtonsDownloads = 'False';
-  var hideButtonsVersions = 'False';
-  var hideButtonsIndex = 'False';
+ var Version = 'V1.05' /*Text at the bottom of the menu, change to whatever you want*/
+  var CDSSlocation = '' /*Only important to CDSS program functions, can be left as it for other systems*/
+  var Title = 'Diabetes Management' /*Name of the tab on the website*/
+  var MainMenuButton = 'Diabetes Management Home' /*Main menu button name*/
+  const MainMenu = 'DM ORZ GMENU DIABETES MANAGEMENT (UPDATE 7/2023)'; /*the menu the website starts at*/
+  var IndexButton = '' /*Only important to CDSS program functions, can be left as it for other systems*/
+  const Index = '';/*Only important to CDSS program functions, can be left as it for other systems*/
+  const OMjson = 'DMOMJSON.json'; /*Name of OMJSON file*/
+  const ODjson = 'DMODJSON.json'; /*Name of ODJSOM file*/
+  const txmlFile = 'DMMenus.txml'; /*Name of txml file*/
+  const ItemLinkjson = ''; /*Name of ItemLinks file*/
+  const AbxLinkjson = 'AbxLinks.json'; /*Name of AbxLinks file*/
+  const MenuPrefix = 'DM ORZ GMENU'; /*Order menu prefix*/
+  const LinkPrefix = ''; /*Generic Order prefix for links*/
+  var hideButtonsDownloads = 'False'; /*buttons to allow user to download json and txml files*/
+  var hideButtonsVersions = 'True';/*mark as true for non-CDSS systems*/
+  var hideButtonsIndex = 'True';/*mark as true for non-CDSS systems*/
   </script> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
