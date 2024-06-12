@@ -1,0 +1,45 @@
+[
+{
+"Name" : "LRZOS PC ANNUAL FEMALE", 
+"DisplayGroup" : "ORDER SET",
+"Component1" : "LRTZ LIPID(SP)", 
+"Component2" : "LRTZ CMP(SP)", 
+"Component3" : "LRTZ CBC(SP)", 
+"DisplayText" : "",
+"Version" : "PC"},
+{
+"Name" : "LRZOS PC DIABETIC ANNUAL FEMALE", 
+"DisplayGroup" : "ORDER SET",
+"Component1" : "LRTZ LIPID(SP)", 
+"Component2" : "LRTZ CMP(SP)", 
+"Component3" : "LRTZ CBC(SP)", 
+"Component4" : "LRTZ A1C(SP)", 
+"Component5" : "LRTZ MICROALBUMIN PROFILE", 
+"DisplayText" : "",
+"Version" : "PC"},
+{
+"Name" : "LRAZ GMENU PC ANNUAL LABS", 
+"DisplayGroup" : "MENU", 
+"DisplayText" : "Annual Labs",
+"Version" : "PC"},
+{
+"Name" : "LRAZ GMENU PC CLINICS 2023", 
+"DisplayGroup" : "MENU", 
+"DisplayText" : "CLINIC LABS",
+"Version" : "PC"},
+{
+"Name" : "ORZ GMENU PC CBOC MENU", 
+"DisplayGroup" : "MENU", 
+"DisplayText" : "CBOC\/HBPC ORDER MENU",
+"Version" : "PC"},
+{
+"Name" : "ORZ GMENU PC CT PROBLEM BASED MENU", 
+"DisplayGroup" : "MENU", 
+"DisplayText" : "Imaging",
+"Version" : "PC"},
+{
+"Name" : "ORZ GMENU PC PRIMARY CARE 2.0", 
+"DisplayGroup" : "MENU", 
+"DisplayText" : "PRIMARY CARE ORDERS MENU",
+"Version" : "PC"}
+]
