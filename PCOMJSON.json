@@ -146,7 +146,7 @@
 ]},
 {"Name" : "ORZ GMENU PC CT PROBLEM BASED MENU", "DisplayText" : "Imaging", "Version" : "PC", "Contents" : [
 {"Row" : 10, "Column" : 1, "Item" : "AXR ORZ GMENU MUSCULOSKELETAL PERSON", "DisplayText" : "Xrays by Anatomic Position", "Text" : "General Radiology (Anatomic View)..."},
-{"Row" : 12, "Column" : 1, "Item" : "RAZ ULTRASOUND", "DisplayText" : "Ultrasound", "Text" : "    "},
+{"Row" : 12, "Column" : 1, "Item" : "RAZ ULTRASOUND", "DisplayText" : "Ultrasound", "Text" : "Ultrasound"},
 {"Row" : 14, "Column" : 1, "Item" : "ORZ GMENU CT", "DisplayText" : "CT MENU", "Text" : "CT..."},
 {"Row" : 16, "Column" : 1, "Item" : "ORZ GMENU MRI ORDER MENU", "DisplayText" : "MRI", "Text" : "MRI..."},
 {"Row" : 18, "Column" : 1, "Item" : "ORZ GMENU BREAST IMAGING MAIN MENU V2", "DisplayText" : "Community Care (CC) Breast Imaging Order Menu", "Text" : "Mammography..."},
